@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul><li>hii</li>
+        <li>piyu</li>
+        <li>hows/li>
+        <li>you</li></ul>
+
+
+    <!-- access child element -->
+    <script type="text/javascript">
+       var child =document.body.children;
+        console.log(child);
+    </script>
+
+
+<!-- add a new chlid in a body -->
+    <script type="text/javascript">
+        // create p tag
+        var para = document.createElement("p");
+        // create paragrph
+        var textNode = document.createTextNode("this is new paragraph");
+        // add text with paragra
+        para.appendChild(textNode);
+        // it will show only in console
+        console.log(para);
+
+        // adding in body tag
+        document.body.appendChild(para);
+
+        // access first and last child
+
+        var list = document.querySelector("ul");
+        console.log(list);
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+
+
+    </script>
+        
+</body>
+</html>
